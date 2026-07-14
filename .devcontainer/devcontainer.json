@@ -1,6 +1,17 @@
 {
   "name": "MLS4002NEF 2026",
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "build": { 
+		"context": "..",
+		"dockerfile": "Dockerfile"
+	},
   "onCreateCommand": "",
-  "postCreateCommand": ""
+  "postCreateCommand": "",
+  "customizations": {
+		"vscode": {
+			"settings": {
+				"python.defaultInterpreterPath": "/opt/conda/envs/mls4002nef-2026"
+			},
+      "extensions": []
+		}
+  }
 }
