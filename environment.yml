@@ -1,0 +1,9 @@
+name: mls4002nef-2026
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - sra-tools
+  - fastqc
