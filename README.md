@@ -1,5 +1,4 @@
 # MLS4002NEF 2026 Summer Practical 2
-## Background
 This is the README of MLS4002NEF 2026 Summer Practical 2.
 
 ## Objectives
@@ -41,3 +40,6 @@ This is the README of MLS4002NEF 2026 Summer Practical 2.
 ### Clean up
 1. Go back to the GitHub repo, click the green button `<> Code` and click `...` and then `Delete`,
    !!! Remember to DELETE the codespace, otherwise you will be charged for the usage of the codes.
+
+## Summary
+
