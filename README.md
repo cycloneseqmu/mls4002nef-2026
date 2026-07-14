@@ -1,5 +1,5 @@
-# MLS4002NEF 2026 Summer Practical 2
-This is the README of MLS4002NEF 2026 Summer Practical 2.
+# MLS4002NEF 2026 Summer Practical 3
+This is the README of MLS4002NEF 2026 Summer Practical 3.
 
 ## Objectives
 - Familiar with the CLI and basic Linux commands.
