@@ -20,6 +20,8 @@ The practical sessions are designed to demonstrate how biological databases and 
 | `cd`  | **C**hange **D**irectory. |
 | `ls`  | **L**i**S**t out the contents (both files and directories) inside the current location.  |
 | `mkdir` | **M**a**K**e a new **DIR**ectory. |
+| `gzip` | Compress file with gzip. |
+
 > [!NOTE]
 > Everything is considered as file in Linux. Directory is a special type of file that contains references to other files and directories, organizing them in a hierarchical structure. You can think of a directory is a folder. The top-level directory is called the root directory, denoted by a forward slash (`/`), and all other directories branch off from it.
 
@@ -31,7 +33,7 @@ The practical sessions are designed to demonstrate how biological databases and 
 
 
 ### Datasets
-<TBC>
+Refer to ...
 
 
 ### Stage 1 - Setup and get started
@@ -46,28 +48,30 @@ The practical sessions are designed to demonstrate how biological databases and 
    3. Create a new directory with `mkdir downloads`.
    4. Check the content of your home directory with `ls` again. You shall see the newly created directory `downloads`.
    5. Change your current directory to the newly created `downloads` with `cd ./downloads`.
-   6. Check your current directory with `pwd`. You shall see `/workspaces/mls4002nef-2026/downloads`.
+   6. Check your current directory with `pwd` to confirm you're at the correct directory. You shall see `/workspaces/mls4002nef-2026/downloads`.
 
 
 ### Stage 2 - Download FASTQ
-1. Download the FASTQ data from SRA. `fastq-dump`
-2. Download the FASTQ data from EBI. `wget`
-3. Check the file size of the downloaded data with `ls -l`. The fifth column is the file size in bytes.
+1. Obtain the accession number and upload to the codespaces.
+2. Download the FASTQ data from SRA. `fastq-dump ${ACCESSION}`
+3. Download the FASTQ data from EBI. `wget `
+4. Check the file size of the downloaded data with `ls -l`. The fifth column is the file size in bytes.
    > What is the file size of your downloaded data in bytes, Megabyte (MB) and Gigabyte (GB)?
    > 1024B=1MB; 1024MB=1GB
+5. Compress the fastq with gzip `gzip *.fastq`.
+6. Check if the fastq been gzipped with `ls`.
 
 
 ### Stage 3 - FASTQC
-1. Run FASTQC on your downloaded data.
-   `fastqc`
+1. Run FASTQC on your downloaded data. `fastqc *.fastq.gz`
 2. Download the report into your own laptop by placing your mouse cursor at the left panel `EXPLORER` and then right click `Download..`. It will download the HTML report at your local computer.
-3. Find the downloaded HTML report and open it by right clicking the file and select `Open With..` and then select the browser.
+3. Find the downloaded HTML report and open it by right clicking the file and select `Open With..` and then select the web browser (e.g., Safari, Firefox, Chrome, Edge).
 
 
 ### Stage 4 - Inspect FASTQ
-1. Unzip your downloaded FASTQ file.
-2. Inspect the first 10 lines of the FASTQ file.
-3. What do you see?
+1. Unzip your downloaded FASTQ file with `gunzip *.fastq`.
+2. Inspect the first 10 lines of the FASTQ file with `head -10 ${YOUR_FASTQ}`.
+   > What do you see? Does it align with the FASTQ format?
 
 
 ### Stage 5 - Clean up
