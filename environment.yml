@@ -6,3 +6,4 @@ dependencies:
   - python=3.12
   - sra-tools
   - fastqc
+  - multiqc
