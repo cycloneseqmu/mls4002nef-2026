@@ -57,20 +57,20 @@ The practical sessions are designed to demonstrate how biological databases and 
    > 1024B=1MB; 1024MB=1GB
 
 
-### Stage 2 - FASTQC
+### Stage 3 - FASTQC
 1. Run FASTQC on your downloaded data.
    `fastqc`
 2. Download the report into your own laptop by placing your mouse cursor at the left panel `EXPLORER` and then right click `Download..`. It will download the HTML report at your local computer.
 3. Find the downloaded HTML report and open it by right clicking the file and select `Open With..` and then select the browser.
 
 
-### Stage 3 - Inspect FASTQ
+### Stage 4 - Inspect FASTQ
 1. Unzip your downloaded FASTQ file.
 2. Inspect the first 10 lines of the FASTQ file.
 3. What do you see?
 
 
-### Stage 4 - Clean up
+### Stage 5 - Clean up
 1. Go back to the GitHub repo, click the green button `<> Code` and click `...` and then `Delete`,
 > [!CAUTION]
 > Remember to DELETE the codespace, otherwise you will be charged for the usage of the codespaces.
