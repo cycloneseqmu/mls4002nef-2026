@@ -1,45 +1,77 @@
 # MLS4002NEF 2026 Summer Practical 3
 This is the README of MLS4002NEF 2026 Summer Practical 3.
+> [!NOTE]
+> README is a plain-text documentation file that introduces a project, explaining its purpose, how to use it, and other key details. Think of it as a quick reference manual of a kit or an equipment.
+
+## Overview
+The practical sessions are designed to demonstrate how biological databases and sequence analysis support modern medical laboratory work.
 
 ## Objectives
 - Familiar with the CLI and basic Linux commands.
 - Download FASTQ files from SRA and EMBL-EBI.
 - Generate FASTQC report.
+- Interpret the FASTQC result to 
 
 ## Manual
-### Setup
-1. Get your codespaces up and running
-   1. Clone this repository. Click `Fork` 
+### Linux Commands Cheatsheet
+| command | usage |
+| ------- | ----- |
+| `pwd` | show the **P**resent **P**orking **D**irectory. |
+| `cd`  | **C**hange **D**irectory. |
+| `ls`  | **L**i**S**t out the contents (both files and directories) inside the current location.  |
+| `mkdir` | **M**a**K**e a new **DIR**ectory. |
+> [!NOTE]
+> Everything is considered as file in Linux. Directory is a special type of file that contains references to other files and directories, organizing them in a hierarchical structure. You can think of a directory is a folder. The top-level directory is called the root directory, denoted by a forward slash (`/`), and all other directories branch off from it.
+
+> [!TIP]
+> `-h` is a commmon shorthand of `--help` option, `${COMMAND} -h` will display a brief usage summary and a list of available options for that command.
+
+> [!TIP]
+> Most (but NOT ALL) commands support `-v` option to display the version of the tools.
+
+
+### Datasets
+<TBC>
+
+
+### Stage 1 - Setup and get started
+1. Get your codespaces up and running.
+   1. Clone this repository. Click `Fork`. Go back to your own cloned repo.
    2. Click the upper right corner Green button `<> Code` and then click `Create codespace on main` to open the codespace. Wait a few minutes for the codespace to be ready.
    3. Your virtual computer is ready.
 2. Familiar with the CLI.
    1. Check your current directory with `pwd`. Your current directory shall be `/workspaces/mls4002nef-2026`.
    2. List the files in your current directory with `ls`. This show you the files in the current directory.
+      > Try `ls -h`, `ls -a`, `ls -l`. Have you noticed any difference in the output?
    3. Create a new directory with `mkdir downloads`.
    4. Check the content of your home directory with `ls` again. You shall see the newly created directory `downloads`.
-   5. Change your current directory to `downloads` with `cd downloads`. You shall see the prompt changed to `~/downloads`.
+   5. Change your current directory to the newly created `downloads` with `cd ./downloads`.
    6. Check your current directory with `pwd`. You shall see `/workspaces/mls4002nef-2026/downloads`.
-3. Download the FASTQ data from SRA.
-   `fastq-dump`
-4. Download the FASTQ data from EBI.
-   `wget`
-5. Check the file size of the downloaded data with `ls -l`. The fifth column is the file size in bytes. What is the file size of your downloaded data?
 
 
-### FASTQC
+### Stage 2 - Download FASTQ
+1. Download the FASTQ data from SRA. `fastq-dump`
+2. Download the FASTQ data from EBI. `wget`
+3. Check the file size of the downloaded data with `ls -l`. The fifth column is the file size in bytes.
+   > What is the file size of your downloaded data in bytes, Megabyte (MB) and Gigabyte (GB)?
+   > 1024B=1MB; 1024MB=1GB
+
+
+### Stage 2 - FASTQC
 1. Run FASTQC on your downloaded data.
    `fastqc`
 2. Download the report into your own laptop by placing your mouse cursor at the left panel `EXPLORER` and then right click `Download..`. It will download the HTML report at your local computer.
 3. Find the downloaded HTML report and open it by right clicking the file and select `Open With..` and then select the browser.
 
-### Inspect FASTQ
+
+### Stage 3 - Inspect FASTQ
 1. Unzip your downloaded FASTQ file.
 2. Inspect the first 10 lines of the FASTQ file.
 3. What do you see?
 
-### Clean up
-1. Go back to the GitHub repo, click the green button `<> Code` and click `...` and then `Delete`,
-   !!! Remember to DELETE the codespace, otherwise you will be charged for the usage of the codes.
 
-## Summary
+### Stage 4 - Clean up
+1. Go back to the GitHub repo, click the green button `<> Code` and click `...` and then `Delete`,
+> [!CAUTION]
+> Remember to DELETE the codespace, otherwise you will be charged for the usage of the codespaces.
 
