@@ -33,7 +33,7 @@ The practical sessions are designed to demonstrate how biological databases and 
 
 
 ### Datasets
-Refer to ...
+Refer to [MLS 4002NEF_NGS workshop_Practical 3 Info sheet](https://docs.google.com/spreadsheets/d/10m_xEVQxQHw-Ygqv3WUZ91dNNXBDpw0ETEpL1riOlrQ/edit?usp=sharing).
 
 
 ### Stage 1 - Setup and get started
