@@ -52,14 +52,13 @@ Refer to ...
 
 
 ### Stage 2 - Download FASTQ
-1. Obtain the accession number and upload to the codespaces.
-2. Download the FASTQ data from SRA. `fastq-dump ${ACCESSION}`
-3. Download the FASTQ data from EBI. `wget `
-4. Check the file size of the downloaded data with `ls -l`. The fifth column is the file size in bytes.
+1. Obtain the accession number from the info sheet.
+2. Download the FASTQ data from SRA using the command `fastq-dump --split-files ${ACCESSION}` as indicated in the sheet.
+3. Check the file size of the downloaded data with `ls -l`. The fifth column is the file size in bytes.
    > What is the file size of your downloaded data in bytes, Megabyte (MB) and Gigabyte (GB)?
    > 1024B=1MB; 1024MB=1GB
-5. Compress the fastq with gzip `gzip *.fastq`.
-6. Check if the fastq been gzipped with `ls`.
+4. Compress the fastq with gzip `gzip *.fastq`.
+5. Check if the fastq been gzipped with `ls`.
 
 
 ### Stage 3 - FASTQC
