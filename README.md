@@ -53,12 +53,15 @@ Refer to [MLS 4002NEF_NGS workshop_Practical 3 Info sheet](https://docs.google.c
 
 ### Stage 2 - Download FASTQ
 1. Obtain the accession number from the info sheet.
-2. Download the FASTQ data from SRA using the command `fastq-dump --split-files ${ACCESSION}` as indicated in the sheet.
-3. Check the file size of the downloaded data with `ls -l`. The fifth column is the file size in bytes.
+2. Check the accession with `vdb-dump --info ${ACCESSION}`.
+   > What is the size of the accession in bytes?
+3. Download the FASTQ data from SRA using the command `fastq-dump --split-files ${ACCESSION}` as indicated in the sheet.
+4. Check the file size of the downloaded data with `ls -l`. The fifth column is the file size in bytes.
    > What is the file size of your downloaded data in bytes, Megabyte (MB) and Gigabyte (GB)?
    > 1024B=1MB; 1024MB=1GB
-4. Compress the fastq with gzip `gzip *.fastq`.
-5. Check if the fastq been gzipped with `ls`.
+   > Does it match the output above?
+5. Compress the fastq with gzip `gzip *.fastq`.
+6. Check if the fastq been gzipped with `ls`.
 
 
 ### Stage 3 - FASTQC
