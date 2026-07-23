@@ -63,6 +63,8 @@ Refer to [MLS 4002NEF_NGS workshop_Practical 3 Info sheet](https://docs.google.c
 5. Compress the fastq with gzip `gzip *.fastq`.
 6. Check if the fastq been gzipped with `ls`.
 
+> [!TIP]
+> You may get more description of an accession at [NCBI SRA](https://www.ncbi.nlm.nih.gov/sra).
 
 ### Stage 3 - FASTQC
 1. Run FASTQC on your downloaded data. `fastqc *.fastq.gz`
