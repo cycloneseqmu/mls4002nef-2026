@@ -16,7 +16,7 @@ The practical sessions are designed to demonstrate how biological databases and 
 ### Linux Commands Cheatsheet
 | command | usage |
 | ------- | ----- |
-| `pwd` | show the **P**resent **P**orking **D**irectory. |
+| `pwd` | show the **P**resent **W**orking **D**irectory. |
 | `cd`  | **C**hange **D**irectory. |
 | `ls`  | **L**i**S**t out the contents (both files and directories) inside the current location.  |
 | `mkdir` | **M**a**K**e a new **DIR**ectory. |
