@@ -32,9 +32,8 @@ Refer to [MLS 4002NEF_NGS workshop_Practical 3 Info sheet](https://docs.google.c
 
 ### Stage 1 - Setup and get started
 1. Get your codespaces up and running.
-   1. Clone this repository. Click `Fork`. Go back to your own cloned repo.
-   2. Click the upper right corner Green button `<> Code` and then click `Create codespace on main` to open the codespace. Wait a few minutes (up to 5-10 minutes) for the codespace to be ready.
-   3. Your virtual computer is ready.
+   1. Click the upper right corner Green button `<> Code` and then click `Create codespace on main` to open the codespace. Wait a few minutes (up to 5-10 minutes) for the codespace to be ready.
+   2. Your virtual computer is ready.
 2. Familiar with the CLI.
    1. Check your current directory with `pwd`. Your current directory shall be `/workspaces/mls4002nef-2026`.
    2. List the files in your current directory with `ls`. This show you the files in the current directory.
@@ -60,7 +59,7 @@ Refer to [MLS 4002NEF_NGS workshop_Practical 3 Info sheet](https://docs.google.c
 1. Obtain the accession number from the info sheet.
 2. Check the accession with `vdb-dump --info ${ACCESSION}`.
    > What is the size of the accession in bytes?
-3. Download the first 1M reads of FASTQ data from SRA using the command `fastq-dump -X 1000000 --split-files ${ACCESSION}`.
+3. Download the first 1M reads of FASTQ data from SRA using the command `fastq-dump -X 1000000 --split-files ${ACCESSION}`. This can takes a few minutes.
 4. Check the file size of the downloaded data with `ls -l`. The fifth column is the file size in bytes.
    > What is the file size of your downloaded data in bytes, Megabyte (MB) and Gigabyte (GB)?
    > 1024B=1MB; 1024MB=1GB
