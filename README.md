@@ -59,7 +59,7 @@ Refer to [MLS 4002NEF_NGS workshop_Practical 3 Info sheet](https://docs.google.c
 1. Obtain the accession number from the info sheet.
 2. Check the accession with `vdb-dump --info ${ACCESSION}`.
    > What is the size of the accession in bytes?
-3. Download the first 1M reads of FASTQ data from SRA using the command `fastq-dump -X 100000 --split-files ${ACCESSION}`. This can takes a few minutes.
+3. Download the first 100K reads of FASTQ data from SRA using the command `fastq-dump -X 100000 --split-files ${ACCESSION}`. This can takes a few minutes.
 4. Check the file size of the downloaded data with `ls -l`. The fifth column is the file size in bytes.
    > What is the file size of your downloaded data in bytes, Megabyte (MB) and Gigabyte (GB)?
    > 1024B=1MB; 1024MB=1GB
