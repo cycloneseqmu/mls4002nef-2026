@@ -73,8 +73,9 @@ Refer to [MLS 4002NEF_NGS workshop_Practical 3 Info sheet](https://docs.google.c
 
 ### Stage 4 - FASTQC
 1. Run FASTQC on your downloaded data. `fastqc *.fastq.gz`
-2. Download the FASTQC and MultiQC report into your own laptop by placing your mouse cursor at the left panel `EXPLORER` and then right click `Download..`. It will download the HTML report at your local computer.
-3. Find the downloaded HTML report and open it by right clicking the file and select `Open With..` and then select the web browser (e.g., Safari, Firefox, Chrome, Edge).
+2. Run MultiQC on your downloaded data. `multiqc .`
+3. Download the FASTQC and MultiQC report into your own laptop by placing your mouse cursor at the left panel `EXPLORER` and then right click `Download..`. It will download the HTML report at your local computer.
+4. Find the downloaded HTML report and open it by right clicking the file and select `Open With..` and then select the web browser (e.g., Safari, Firefox, Chrome, Edge).
 
 
 ### Stage 5 - Inspect FASTQ
