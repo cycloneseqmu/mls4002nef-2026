@@ -76,6 +76,7 @@ Refer to [MLS 4002NEF_NGS workshop_Practical 3 Info sheet](https://docs.google.c
 2. Run MultiQC on your downloaded data. `multiqc .`
 3. Download the FASTQC and MultiQC report into your own laptop by placing your mouse cursor at the left panel `EXPLORER` and then right click `Download..`. It will download the HTML report at your local computer.
 4. Find the downloaded HTML report and open it by right clicking the file and select `Open With..` and then select the web browser (e.g., Safari, Firefox, Chrome, Edge).
+5. Rename the MultiQC Report in the format of `${ACCESSION}_multiqc.html` and upload to [Google Drive Folder] (https://drive.google.com/drive/folders/1eOQkyTncaPnxSap1o8DQ0sy48s9iHKOh?usp=sharing).
 
 
 ### Stage 5 - Inspect FASTQ
